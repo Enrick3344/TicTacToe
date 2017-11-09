@@ -6,6 +6,7 @@ use pocketmine\level\Position;
 use pocketmine\math\Vector3;
 
 use robske_110\TTT\TicTacToe;
+use robske_110\TTT\EventListener;
 
 class Arena{
 	/** @var Position */
