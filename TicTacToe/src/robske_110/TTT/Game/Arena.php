@@ -53,7 +53,7 @@ class Arena{
 			$x = null;
 			$z = $this->pos1->z;
 		}else{
-			$this->getMain()->getLogger()->emergency("An Arena got permanently disabled due to: ARENA_NOT_2D");
+			$this->main->main->getLogger()->emergency("An Arena got permanently disabled due to: ARENA_NOT_2D");
 			$this->game = null;
 			$this->occupied = true; //Prevent any further usages of this arena
 			return;
@@ -92,7 +92,7 @@ class Arena{
      * @return TicTacToe
      */
 	public function getMain(): TicTacToe{
-		return TicTacToe;
+		return $this->main;
 	}
 
     /**
