@@ -13,7 +13,7 @@ class Arena{
 	private $pos1;
 	/** @var Position */
 	private $pos2;
-	/** @var TicTacToe */
+	/** @var EventListener */
 	private $main;
 	
 	/** @var null|Game */
@@ -89,9 +89,9 @@ class Arena{
 	}
 
     /**
-     * @return TicTacToe
+     * @return EventListener
      */
-	public function getMain(): TicTacToe{
+	public function getMain(): EventListener{
 		return $this->main;
 	}
 
